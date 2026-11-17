@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="card">
+    {% if student %}
+      <h1>Welcome, {{ student.full_name }}</h1>
+    {% else %}
+      <h1>Student Academic Records</h1>
+      <p>Create an account or log in to continue.</p>
+    {% endif %}
+  </div>
+{% endblock %}
